@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    
+    <style>
+        #text-input{
+            width: 100%;
+            font-size: 22px;
+            padding: 10px 14px;
+        }
+        main{
+            height: 100%;
+            width: 60%;
+            margin: 10px auto;
+        }
+        .result-container{
+            background-color: bisque;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            padding-left: 30px;
+        }
+        .box label{
+            background-color: black;
+            width: fit-content;
+            color: aliceblue;
+            padding: 6px;
+        }
+        .box{
+            position: relative;
+        }
+        .box label{
+            position: absolute;
+            left: 20px;
+            top: -14px;
+        }
+        .box .result-container{
+            margin: 32px 0;
+            z-index: -1;
+        }
+        .box .result-container h4{
+            font-size: 18px;
+            /* padding-top: 10px; */
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <main>
+        <input type="text" name="" id="text-input">
+        <div class="box" id="lowercase"> 
+            <label for="lowercase">lower case</label>
+            <div class="result-container"><h4 class="result"></h4></div>
+        </div>
+        <div class="box" id="uppercase">
+            <label>uppercase</label>
+            <div class="result-container"><h4 class="result"></h4></div>
+        </div>
+        <div class="box" id="camelcase">
+            <label>camel case</label>
+            <div class="result-container"><h4 class="result"></h4></div>
+        </div>
+        <div class="box" id="pascalcase">
+            <label>pascal case</label>
+            <div class="result-container"><h4 class="result"></h4></div>
+        </div>
+        <div class="box" id="snakecase">
+            <label>snake case</label>
+            <div class="result-container"><h4 class="result"></h4></div>
+        </div>
+        <div class="box" id="kebabcase">
+            <label>kebab case</label>
+            <div class="result-container"><h4 class="result"></h4></div>
+        </div>
+        <div class="box" id="trim">
+            <label>trim</label>
+            <div class="result-container"><h4 class="result"></h4></div>
+        </div>
+    </main>
+    
+</body>
+</html>
